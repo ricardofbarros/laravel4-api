@@ -20,11 +20,11 @@ class ApiServiceProvider extends ServiceProvider {
      */
     public function boot()
     {
-        $this->package('teepluss/api');
+        $this->package('rbarros/api');
 
         // Auto create app alias with boot method.
         $loader = AliasLoader::getInstance();
-        $loader->alias('API', 'Teepluss\Api\Facades\API');
+        $loader->alias('API', 'Rbarros\Api\Facades\API');
     }
 
     /**
