@@ -7,7 +7,10 @@
     "license": "MIT",
     "authors": [
         {
-            "name": "Rbarros",
+            "name": "Teepluss",
+            "email": "admin@laravel.in.th",
+            "homepage": "https://github.com/teepluss",
+            "role": "Developer"
         }
     ],
     "require": {
