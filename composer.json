@@ -1,5 +1,5 @@
 {
-    "name": "teepluss/api",
+    "name": "rbarros/api",
     "description": "Laravel 4 Internal Request (HMVC)",
     "keywords": ["laravel", "laravel4", "restful", "api", "hmvc"],
     "homepage": "https://github.com/teepluss/laravel4-api",
@@ -7,10 +7,7 @@
     "license": "MIT",
     "authors": [
         {
-            "name": "Teepluss",
-            "email": "admin@laravel.in.th",
-            "homepage": "https://github.com/teepluss",
-            "role": "Developer"
+            "name": "Rbarros",
         }
     ],
     "require": {
