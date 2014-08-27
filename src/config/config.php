@@ -12,6 +12,19 @@ return array(
     |
     */
 
-    'httpResponse' => false
+    'httpResponse' => false,
+    
+    
+    /*
+    |--------------------------------------------------------------------------
+    | Domain connector
+    |--------------------------------------------------------------------------
+    |
+    | Default false, If you set a domain you will bind all API calls (get, post, put and delete)
+    | to consume the domain.
+    |
+    */    
+    
+    'domainBind' => 'http://localhost:3000/api'
 
 );
