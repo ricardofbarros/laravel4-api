@@ -2,8 +2,8 @@
     "name": "rbarros/api",
     "description": "Laravel 4 Internal Request (HMVC)",
     "keywords": ["laravel", "laravel4", "restful", "api", "hmvc"],
-    "homepage": "https://github.com/teepluss/laravel4-api",
-    "type": "library",
+    "homepage": "https://github.com/ricardofbarros/laravel4-ap",
+    "type": "package",
     "license": "MIT",
     "authors": [
         {
