@@ -1,4 +1,4 @@
-<?php namespace Teepluss\Api\Commands;
+<?php namespace Rbarros\Api\Commands;
 
 use Illuminate\Console\Command;
 use Symfony\Component\Console\Input\InputOption;

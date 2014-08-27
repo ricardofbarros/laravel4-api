@@ -1,4 +1,4 @@
-<?php namespace Teepluss\Api;
+<?php namespace Rbarros\Api;
 
 use Guzzle\Http\Client;
 use Illuminate\Http\Request;

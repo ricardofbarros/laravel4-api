@@ -23,7 +23,7 @@
     },
     "autoload": {
         "psr-0": {
-            "Teepluss\\Api": "src/"
+            "Rbarros\\Api": "src/"
         }
     },
     "extra": {

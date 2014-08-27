@@ -1,4 +1,4 @@
-<?php namespace Teepluss\Api\Facades;
+<?php namespace Rbarros\Api\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
