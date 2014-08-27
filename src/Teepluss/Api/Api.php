@@ -323,6 +323,23 @@ class Api {
     }
 
     /**
+     * Invoke from binded domain.
+     *
+     * @param  string $uri
+     * @param  string $method
+     * @param  array  $parameters
+     * @return mixed
+     */
+    private function invokeBindedDomain($uri, $method, $parameters = array())
+    {
+        //Set binded domain
+        $uri = $this->config['domainBind'] . $uri;
+        
+        // Call method
+        return $this->invokeRemote($uri, $method, $parameters);
+    }    
+
+    /**
      * Alias call method.
      *
      * @return mixed
@@ -332,16 +349,21 @@ class Api {
         if (in_array($method, array('get', 'post', 'put', 'delete')))
         {
             $uri = array_shift($parameters);
-
-            $parameters = current($parameters);
-            $parameters = is_array($parameters) ? $parameters : array();
-
-            if (preg_match('/^http(s)?/', $uri))
-            {
-                return $this->invokeRemote($uri, $method, $parameters);
+            
+            $parameters = is_array(current($parameters)) ? current($parameters) : array();
+            
+            if($this->config['domainBind']) {
+                return $this->invokeBindedDomain($uri, $method, $parameters);
             }
+            else 
+            {
+                if (preg_match('/^http(s)?/', $uri))
+                {
+                    return $this->invokeRemote($uri, $method, $parameters);
+                }
 
-            return $this->invoke($uri, $method, $parameters);
+                return $this->invoke($uri, $method, $parameters);                
+            }
         }
     }
 
